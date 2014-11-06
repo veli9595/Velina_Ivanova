@@ -10,8 +10,32 @@ int main()
     cin>>n;
     for(int i=0;i<n;i++)
     {
-        cout<<c<<"  ";
+        cout<<c<<" ";
     }
+    cout<<endl;
+    for(int i=1;i<n-1;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<" ";
+        }
+        cout<<c;
+        for(int k=0;k<2*n-3-2*i;k++)
+        {
+            cout<<" ";
+        }
+        cout<<c;
+        for(int j=0;j<i;j++)
+        {
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    for(int i=0;i<n-1;i++)
+    {
+        cout<<" ";
+    }
+    cout<<c<<endl;
 
     return 0;
 }
